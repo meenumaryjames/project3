@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="html, javascript" />
+    <meta name="description" content="Test Web app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Content/Styles/site.css" />
+    <script>
+        function fnValiate() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm password").value;
+            if (password==confirmPassword) {
+                document.location.href = "adminHome.html";
+            } else {
+                document.location.href = "error.html";
+            }
+        }
+        function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("age").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 19 || x > 26) {
+        alert("Input not valid");
+    } 
+         
+    
+    
+}
+    </script>
+    
+</head>
+<body>
+    <div id="container">
+        <section id="pageHeader">
+            <div id="pageLogo">
+
+            </div>
+            <div id="header">
+                <header>
+                    <h1>User Registration Form</h1>
+                </header>
+            </div>
+            
+        </section>
+        <section id="sidebar">
+            <div id="sideHeader">
+                
+            </div>
+            
+        </section>
+        <section id="maincontent">
+            <section id="content">
+                <form name="registerForm" id="registerFormm" action="" method="get" >
+                    <fieldset>
+                        <legend>Register Form</legend>
+                        <div>
+                            <label>Username:</label>
+                            <input type="text" id="username" name="username" autofocus placeholder="enter username" required />
+                        </div>
+                        <div>
+                            <label for="age">Age:</label>
+                            <input type="text" id="age" name="age" onmouseout ="myFunction()" placeholder="enter age" required/>
+                        </div>
+                        <div>
+                            <label>Password:</label>
+                            <input type="password" id="password" name="password"  placeholder="enter password" required/>
+</div>
+                         <div>
+                            <label> Confirm Password:</label>
+                            <input type="password" id="confirm password" name="confirm password"  placeholder="enter password" required/>
+</div>
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email"  pattern="\w+\@\w+\.[a-zA-Z]{2,4}" placeholder="enter email" required/>
+                        </div>
+                        <div>
+                            <label for="mobile">Mobile:</label>
+                            <input type="text" id="mobile" name="mobile" pattern="\d{10}" placeholder="enter cellno" required/>
+                        </div>
+                      <div>
+                          <label>Country:</label>
+                          <input list="countryList" />
+                          <datalist id="countryList">
+                              <option>India</option>
+                              <option>China</option>
+                              <option>United States</option>
+                          </datalist>
+                      </div>
+                      <div>
+                            <label for="zipcode">zipcode:</label>
+                            <input type="text" id="zipcode" name="zipcode" pattern="\d{6}" placeholder="enter zipcode" required/>
+                        </div>
+                        
+
+                        <div>
+                            <input type="button"  value="Submit" onclick="fnValiate()" />
+                        </div>
+                    </fieldset>
+                </form>
+
+            </section>
+        </section>
+
+        <section id="clear"></section>
+        
+    </div>
+
+</body>
+</html>
+
+    
+

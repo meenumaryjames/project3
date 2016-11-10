@@ -1,0 +1,79 @@
+ body{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-image: url("apple.jpg");
+                 background-repeat: repeat-x;
+       }
+        #container{
+            border:1px solid #000000;
+            border-radius:5px;
+            margin:5px;
+            padding:5px;
+            
+        }
+        #pageHeader{
+            height:200px;
+            border:1px solid #c0ed96;
+            border-radius:10px;
+            margin:10px;
+            padding:10px;
+
+        }
+        #pageHeader #header h1{
+          text-align:left;
+            font-family:cursive;
+            font-style:bold;
+            color:red;
+            font-size: 40px
+            
+        }
+        #topMenu ul
+        {float:right;
+            background-color: #FFFFFF;}
+        #topMenu ul li
+        {
+          list-style:none;
+          display:inline;
+        }
+        #topMenu ul li a
+        {
+          text-decoration:none;
+        }
+        #topMenu ul li a:hover
+        {
+          text-decoration:none;
+          font-size:16px;
+            background-color: #808080;
+        }
+
+        #sidebar
+        {
+          float:left;
+          width:30%;
+          margin:10px;
+          padding: 10px;
+          border:1px dotted #e29b10;
+          border-radius: 10px;
+          min-height: 500px;
+            background-color:#FFB6C1;
+        }
+        #maincontent
+        {
+          float:right;
+          width:60%;
+          margin: 10px;
+          padding: :10px;
+          border:1px s0lid #b8e944;
+          border-readius:10px;
+          min-height: :500px;
+        }
+                
+
+        #clear{
+            clear:both;
+        }
+   #contentHeader #header2 h1
+   {
+    color:black;
+    font-size: 20px;
+    font-style: bold;
+   }     
